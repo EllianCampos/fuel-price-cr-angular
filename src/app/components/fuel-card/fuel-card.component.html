@@ -1,0 +1,11 @@
+<a
+  [style.background-color]="getColor(fuel.id)"
+  class="text-light rounded-3 p-3 mt-4 btn w-100"
+  routerLink="fuel/{{ fuel.nomprod }}"
+>
+  <div>
+    <app-fuel-card-title [title]="fuel.nomprod" />
+    <app-fuel-card-price [price]="fuel.preciototal" />
+    <p>Ultima actualización: {{ fuel.fechaupd }}</p>
+  </div>
+</a>

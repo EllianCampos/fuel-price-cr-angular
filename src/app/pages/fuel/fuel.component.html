@@ -1,0 +1,20 @@
+<main class="container">
+  <a routerLink="" class="btn btn-outline-secondary my-2">Volver</a>
+  
+  <app-fuel-card-title [title]="fuelData?.nomprod!" />
+  <app-fuel-card-price [price]="fuelData?.preciototal!" />
+
+  <div class="row">
+    <div class="col">
+      <p><span>ID: </span>{{ fuelData?.id }}</p>
+      <p><span>Tipo : </span>{{ fuelData?.tipo }}</p>
+      <p><span>Fecha Actualización: </span>{{ fuelData?.fechaupd }}</p>
+    </div>
+    <div class="col">
+      <p><span>Impuesto: </span>{{ fuelData?.impuesto }}</p>
+      <p><span>Precio sin impuesto: </span>{{ fuelData?.precsinimp }}</p>
+      <p><span>Margen promedio: </span>{{ fuelData?.margenpromedio }}</p>
+    </div>
+  </div>
+
+</main>
